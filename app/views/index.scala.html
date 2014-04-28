@@ -1,0 +1,32 @@
+@(title: String)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@title</title>
+    <link rel='shortcut icon' type='image/png' href='@routes.Assets.at("images/favicon.png")'>
+    <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.css"))'>
+    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))'></script>
+    <script type='text/javascript' src='@StaticAssets.url("javascripts/index.js")'></script>
+    <style>
+    body {
+        margin-top: 60px;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">@title</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="well">
+            <h1>@title</h1>
+        </div>
+    </div>
+</body>
+</html>
