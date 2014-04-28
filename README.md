@@ -189,4 +189,4 @@ Now the calls to `StaticAssets.url` will return a fully qualified (and possibly 
 
 Each of these methods of static asset optimization provide a great way to speed up the loading of your Play web application.  They can be used together or independently.  They can also be used with WebJars.
 
-Check out the a working sample app that includes these optimizations on GitHub: [
+Check out the a working sample app that includes these optimizations on GitHub: [https://github.com/jamesward/play-static-asset-optimizations](https://github.com/jamesward/play-static-asset-optimizations)
