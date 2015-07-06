@@ -6,6 +6,5 @@ GET     /                              controllers.Application.index()
 GET     /foo                           controllers.Application.foo()
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file                  controllers.Assets.at(path="/public", file)
-GET     /assets-static/:version/*file  controllers.StaticAssets.at(path="/public", version, file)
+GET     /assets/*file                  controllers.Assets.versioned(path="/public", file: Asset)
 GET     /webjars/*file                 controllers.WebJarAssets.at(file)

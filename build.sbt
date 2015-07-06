@@ -2,10 +2,14 @@ name := "play-optimizing-static-assets"
 
 version := "1.0-SNAPSHOT"
 
+scalaVersion := "2.11.7"
+
 libraryDependencies ++= Seq(
   filters,
-  "org.webjars" %% "webjars-play" % "2.2.1-2",
+  "org.webjars" %% "webjars-play" % "2.4.0-1",
   "org.webjars" % "bootstrap" % "3.1.1"
 )
 
-play.Project.playScalaSettings
+routesGenerator := InjectedRoutesGenerator
+
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
